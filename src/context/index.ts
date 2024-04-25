@@ -10,4 +10,4 @@ export interface IGlobalStateContext {
   roughSvg?: any;
 }
 
-export const GlobalStateContext = createContext<IGlobalStateContext>(null);
+export const GlobalStateContext = createContext<IGlobalStateContext>({});

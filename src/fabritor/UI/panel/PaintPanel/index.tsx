@@ -86,9 +86,8 @@ export default function PaintPanel () {
       <Flex wrap="wrap" justify="space-around">
         {
           BrushList.map((item , index) => (
-            <Tooltip trigger="hover" title={item.title}>
+            <Tooltip key={item.key} trigger="hover" title={item.title}>
               <div
-                key={item.key}
                 className="fabritor-panel-shape-item"
                 onClick={() => {
                   handleBrushChange(item.options);

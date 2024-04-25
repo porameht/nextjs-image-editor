@@ -1,6 +1,6 @@
 import { Divider } from 'antd';
 
-export default function (props) {
+export default function Title(props) {
   const { children } = props;
   return (
     <Divider>{children}</Divider>

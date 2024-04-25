@@ -199,7 +199,7 @@ export const renderToolBarController = () => {
     offsetX: -24,
     offsetY: -26,
     cursorStyle: 'pointer',
-    mouseUpHandler: handleCopyObject,
+    mouseUpHandler: handleCopyObject as any,
     render: renderSvgIcon(COPY_IMG)
   });
   fabric.Object.prototype.controls.copy = copyControl;

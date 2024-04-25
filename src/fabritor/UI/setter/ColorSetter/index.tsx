@@ -91,8 +91,8 @@ export default function ColorSetter (props) {
       <svg style={{ width:0, height: 0, position: 'absolute' }} aria-hidden="true" focusable="false">
         <linearGradient id="colorsetter-icon-gradient" x2="1" y2="1">
           {
-            value?.gradient?.colorStops.map(stop => (
-              <stop offset={`${stop.offset * 100}%`} stop-color={stop.color} />
+            value?.gradient?.colorStops.map((stop, index) => (
+              <stop key={index} offset={`${stop.offset * 100}%`} stop-color={stop.color} />
             ))
           }
         </linearGradient>

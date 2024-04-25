@@ -16,7 +16,7 @@ const headerStyle: React.CSSProperties = {
   borderBottom: '1px solid #e8e8e8'
 };
 
-export default function () {
+function HeaderComponent() { // Assign a name to the function
   return (
     <Header style={headerStyle}>
       <Logo />
@@ -31,3 +31,5 @@ export default function () {
     </Header>
   )
 }
+
+export default HeaderComponent;

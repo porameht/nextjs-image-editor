@@ -40,7 +40,7 @@ export const copyObject = async (canvas, target) => {
     }
     if (!target) return Promise.resolve(false);
 
-    // 清空系统剪贴板
+    // Clear the system clipboard
     navigator.clipboard.writeText('');
     return target.clone(cloned => {
       _clipboard = cloned;
@@ -50,7 +50,7 @@ export const copyObject = async (canvas, target) => {
 }
 
 export const pasteObject = async (canvas) => {
-  // 先尝试读取系统剪贴板
+// First try to read from the system clipboard
   try {
     const { type, result } = await getSystemClipboard() || {};
     if (result) {

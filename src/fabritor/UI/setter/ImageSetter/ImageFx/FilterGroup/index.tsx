@@ -69,6 +69,7 @@ export default function RadioImageGroup (props) {
       {
         COLOR_FILTER_LIST.map(option => (
           <div
+            key={option.value} // Add key prop
             className="fabritor-radio-image-group-item"
             onClick={() => { handleChange(option.value, 'type') }}
           >
