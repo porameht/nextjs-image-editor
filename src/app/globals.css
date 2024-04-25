@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.fabritor-layout .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab {
+  padding: 8px 18px;
+}
+
+.ant-tabs-content-holder {
+  overflow: auto !important;
+}
+
+.fabritor-layout h5.ant-typography {
+  margin: 0;
+}
+
+.fabritor-color-setter .rcs .rc-input-number-affix-wrapper {
+  height: 20px;
+}
+
+.fabritor-color-setter .rcs-preset-colors {
+  gap: 5;
+}
+
+.fabritor-toolbar-item {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  line-height: 0;
+}
+
+.fabritor-toolbar-item:hover {
+  background-color: rgba(64,87,109,.07);
+}
+
+#fabritor-rough-svg {
+  position: fixed;
+  left: 99999999px;
+  top: 99999999px;
+  z-index: -1;
+}
