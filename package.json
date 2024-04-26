@@ -14,13 +14,6 @@
     "os": false
   },
   "dependencies": {
-    "@ant-design/icons": "^5.2.6",
-    "@emoji-mart/data": "^1.1.2",
-    "@emoji-mart/react": "^1.1.1",
-    "@types/fabric": "^5.3.3",
-    "@types/node": "20.4.0",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
     "antd": "^5.16.4",
     "autoprefixer": "10.4.14",
     "cropperjs": "^1.6.2",
@@ -44,6 +37,13 @@
   "devDependencies": {
     "@types/fontfaceobserver": "^2.1.2",
     "@types/react-color": "^3.0.6",
-    "@types/uuid": "^9.0.8"
+    "@types/uuid": "^9.0.8",
+    "@ant-design/icons": "^5.2.6",
+    "@emoji-mart/data": "^1.1.2",
+    "@emoji-mart/react": "^1.1.1",
+    "@types/fabric": "^5.3.3",
+    "@types/node": "20.4.0",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
   }
 }
