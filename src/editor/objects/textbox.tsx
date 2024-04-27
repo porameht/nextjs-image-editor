@@ -38,7 +38,7 @@ export const drawTextPath = (textbox, offset) => {
   textbox.canvas.requestRenderAll();
 }
 
-// 移除 path 属性位置错误，拖动一下才会更新。
+// Remove the wrong path attribute position and it will be updated after dragging it.
 export const removeTextPath = (textbox) => {
   textbox.set({
     path: null
@@ -51,7 +51,7 @@ export const createTextbox = async (options) => {
 
   let tmpPathInfo = { hasPath: false, offset: 100 };
 
-  const textBox = new fabric.FText(text || '这是一段文本', {
+  const textBox = new fabric.FText(text || 'This is a text', {
     ...TEXTBOX_DEFAULT_CONFIG,
     ...rest,
     fontFamily,

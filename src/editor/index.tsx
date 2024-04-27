@@ -80,7 +80,7 @@ export default class Editor {
   }
 
   private _initSketch () {
-    // 默认小红书尺寸
+    //Default size
     const { width = 1242, height = 1660 } = this._template || {};
     const sketch = new fabric.Rect({
       fill: '#ffffff',
