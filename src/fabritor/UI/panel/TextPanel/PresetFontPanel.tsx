@@ -1,12 +1,12 @@
 import { Flex, Card } from 'antd';
 import Title from '@/fabritor/components/Title';
 
-const PRESET_FONT_LIST = [
+export const PRESET_FONT_LIST = [
   {
-    label: <div style={{ fontSize: 30, fontFamily: 'SmileySans', fontWeight: 'bold' }}>Add title</div>,
+    label: <div style={{ fontSize: 30, fontFamily: 'Arial', fontWeight: 'bold' }}>Add title</div>,
     key: 'title',
     config: {
-      fontFamily: 'SmileySans',
+      fontFamily: 'Arial',
       fontWeight: 'bold',
       fontSize: 120,
       text: 'Add title',
@@ -14,10 +14,10 @@ const PRESET_FONT_LIST = [
     }
   },
   {
-    label: <div style={{ fontSize: 24, fontFamily: 'AlibabaPuHuiTi' }}>Add subtitle</div>,
+    label: <div style={{ fontSize: 24, fontFamily: 'Helvetica' }}>Add subtitle</div>,
     key: 'sub-title',
     config: {
-      fontFamily: 'AlibabaPuHuiTi',
+      fontFamily: 'Helvetica',
       fontWeight: 'bold',
       fontSize: 100,
       text: 'Add subtitle',
@@ -25,19 +25,19 @@ const PRESET_FONT_LIST = [
     }
   },
   {
-    label: <div style={{ fontSize: 16, fontFamily: 'SourceHanSerif' }}>Add a text</div>,
+    label: <div style={{ fontSize: 16, fontFamily: 'Times New Roman' }}>Add a text</div>,
     key: 'content',
     config: {
-      fontFamily: 'SourceHanSerif',
+      fontFamily: 'Times New Roman',
       fontSize: 80,
       text: 'Add a text'
     }
   },
   {
-    label: <div style={{ fontSize: 26, fontFamily: '霞鹜文楷', color: '#ffffff' , WebkitTextStroke: '1px rgb(255, 87, 87)' }}>Text border</div>,
+    label: <div style={{ fontSize: 26, fontFamily: 'Courier New', color: '#ffffff', WebkitTextStroke: '1px rgb(255, 87, 87)' }}>Text border</div>,
     key: 'content',
     config: {
-      fontFamily: '霞鹜文楷',
+      fontFamily: 'Courier New',
       fontSize: 100,
       text: 'Text border',
       fill: '#ffffff',
@@ -45,7 +45,7 @@ const PRESET_FONT_LIST = [
       strokeWidth: 12
     }
   }
-]
+];
 
 export default function PresetFontPanel (props) {
   const { addTextBox } = props;
@@ -63,9 +63,6 @@ export default function PresetFontPanel (props) {
             key={item.key}
             hoverable
             onClick={() => { handleClick(item) }}
-            // bodyStyle={{
-            //   padding: '12px 30px'
-            // }}
           >
             {item.label}
           </Card>

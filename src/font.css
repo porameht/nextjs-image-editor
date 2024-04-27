@@ -1,103 +1,77 @@
 @font-face {
-  font-family: "AlibabaPuHuiTi";
-  src: url("./assets/fonts/AlibabaPuHuiTi-3-55-Regular/AlibabaPuHuiTi-3-55-Regular.woff") format("woff"),
-    url("./assets/fonts/AlibabaPuHuiTi-3-55-Regular/AlibabaPuHuiTi-3-55-Regular.woff2") format("woff2");
+  font-family: "Arial";
+  src: url("https://fonts.gstatic.com/s/arimo/v16/Gpeo80g-5ji2CcyXWnR5oQLUuEpTyoU.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SourceHanSans";
-  src: url("./assets/fonts/SourceHanSansCN-Regular.otf") format("opentype");
+  font-family: "Helvetica";
+  src: url("https://fonts.gstatic.com/s/notosans/v20/o-0IIpQlx3QUlC5A4PNb4j4Z_f5u.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "霞鹜新晰黑";
-  src: url("./assets/fonts/LXGWNeoXiHei.ttf");
+  font-family: "Times New Roman";
+  src: url("https://fonts.gstatic.com/s/timesnewroman/v15/6xKydSBYKcSV-LCoeQqfX1RYOo3qOK7l.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "霞鹜尚智黑";
-  src: url("./assets/fonts/LXGWFasmartGothic.ttf");
+  font-family: "Courier New";
+  src: url("https://fonts.gstatic.com/s/couriernew/v16/OLZMaMfR4ZKdjl1C4CR3_RwJ2ljzASrP9w.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "霞鹜文楷";
-  src: url("./assets/fonts/LXGWWenKai-Regular.ttf");
+  font-family: "Verdana";
+  src: url("https://fonts.gstatic.com/s/verdana/v15/6ZZGKElKVAv0JvZ2JW6P76HJ89c.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "小赖字体";
-  src: url("./assets/fonts/XiaolaiSC-Regular.ttf");
+  font-family: "Georgia";
+  src: url("https://fonts.gstatic.com/s/georgia/v15/SLXGc1na-mM4c309ZEXx3_fS3A.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SourceHanSerif";
-  src: url("./assets/fonts/SourceHanSerifCN-Regular.ttf");
+  font-family: "Tahoma";
+  src: url("https://fonts.gstatic.com/s/tahoma/v20/ahcbv_mUyIRVoMUN2wDAaBTTydc.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "方正楷体";
-  src: url("./assets/fonts/方正楷体简体.ttf");
+  font-family: "Arial Narrow";
+  src: url("https://fonts.gstatic.com/s/arialisnarrow/v14/Noa26Ubg2qwr5FUQ3eY5QIo_EsxF.dll") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "悠哉字体";
-  src: url("./assets/fonts/Yozai-Regular.ttf");
+  font-family: "Trebuchet MS";
+  src: url("https://fonts.gstatic.com/s/trebuchetms/v15/je7QTM4qzYrFZSfjJwsAriWi.dll") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "包图小白体";
-  src: url("./assets/fonts/包图小白体.ttf");
+  font-family: "Impact";
+  src: url("https://fonts.gstatic.com/s/impact/v13/1cX2aUHKGq1bl0g0l75B5B2w7A5RUg.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "手写杂字体";
-  src: url("./assets/fonts/手写杂字体.ttf");
+  font-family: "Book Antiqua";
+  src: url("https://fonts.gstatic.com/s/bookantiqua/v15/piwDx4xlRfc7jlBc0qoUX5F5YeA.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "胡晓波男神体";
-  src: url("./assets/fonts/胡晓波男神体.otf") format("opentype");
+  font-family: "Palatino";
+  src: url("https://fonts.gstatic.com/s/palatino/v15/kJcSCtFALotzF1VjpnDIy11Pjjg.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "胡晓波骚包体";
-  src: url("./assets/fonts/胡晓波骚包体.otf") format("opentype");
+  font-family: "Lucida Sans Unicode";
+  src: url("https://fonts.gstatic.com/s/lucidasansunicode/v16/vJw6rXqxfYB2hp4zQNEaOxhCUOGz7vYGh680lGh-uXM.ttf") format("truetype");
   font-display: swap;
 }
-
-@font-face {
-  font-family: "站酷快乐体";
-  src: url("./assets/fonts/站酷快乐体.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "站酷文艺体";
-  src: url("./assets/fonts/站酷文艺体.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "站酷小薇LOGO体";
-  src: url("./assets/fonts/站酷小薇LOGO体.otf") format("opentype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SmileySans";
-  src: url("./assets/fonts/SmileySans-Oblique.ttf");
-  font-display: swap;
-}
-
