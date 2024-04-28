@@ -8,7 +8,7 @@ export const loadImageDom = async (url) => {
       if (img) {
         return resolve(img);
       }
-      message.error('加载图片失败');
+      message.error('Failed to load image');
       return reject();
     }, null, 'anonymous');
   });
@@ -19,7 +19,7 @@ export const loadImage = async (imageSource) => {
     return new Promise<fabric.Image>((resolve, reject) => {
       fabric.Image.fromURL(imageSource, (img) => {
         if (!img) {
-          message.error('加载图片失败');
+          message.error('Failed to load image');
           reject();
           return;
         }
