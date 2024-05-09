@@ -1,13 +1,22 @@
 import { Popover } from 'antd';
-// import { ColorsPicker, Color } from 'react-colors-beauty';
+import { ColorsPicker, Color } from 'react-colors-beauty';
+import 'react-colors-beauty/dist/index.umd.es5.development.css';
 
+
+// import { SketchPicker } from 'react-color'
 // @TODO preset size
+
 export default function ColorSetter (props) {
   const { defaultColor = '#ffffff', trigger, type, value, onChange } = props;
 
   const handleChange = (v) => {
     if (!v) return;
     if (!v.color) v.color = defaultColor;
+
+    // if (v) {
+    //   v.type = 'solid'
+    // }
+
     onChange?.(v);
   }
 
@@ -23,27 +32,27 @@ export default function ColorSetter (props) {
     }
   }
 
-  // const calcBackgroundColor = () => {
-  //   switch(value?.type) {
-  //     case 'solid':
-  //       return value.color;
-  //     case 'linear':
-  //       return `linear-gradient(${value.gradient?.angle}deg, ${value.gradient?.colorStops.map(stop => `${stop.color} ${stop.offset * 100}%`)})`;
-  //     case 'radial':
-  //       return `radial-gradient(at 50% 50%, ${value.gradient?.colorStops.map(stop => `${stop.color} ${stop.offset * 100}%`)})`;
-  //     default:
-  //       return 'rgba(0, 0, 0, 0.88)';
-  //   }
-  // }
+  const calcBackgroundColor = () => {
+    switch(value?.type) {
+      case 'solid':
+        return value.color;
+      case 'linear':
+        return `linear-gradient(${value.gradient?.angle}deg, ${value.gradient?.colorStops.map(stop => `${stop.color} ${stop.offset * 100}%`)})`;
+      case 'radial':
+        return `radial-gradient(at 50% 50%, ${value.gradient?.colorStops.map(stop => `${stop.color} ${stop.offset * 100}%`)})`;
+      default:
+        return 'rgba(0, 0, 0, 0.88)';
+    }
+  }
 
   const calcTriggerBg = () => {
     if (value?.type === 'solid') {
-      // const c = new Color(value.color);
-      // if (c.toHexString() === '#ffffff') {
-      //   return 'rgba(103,103,103,0.24)';
-      // }
+      const c = new Color(value.color);
+      if (c.toHexString() === '#ffffff') {
+        return 'rgba(103,103,103,0.24)';
+      }
     }
-    return null;
+    return 'rgba(103,103,103,0.24)';
   }
 
   const renderTrigger = () => {
@@ -64,7 +73,7 @@ export default function ColorSetter (props) {
 
   return (
     <>
-      {/* <Popover
+      <Popover
         content={
           <div className="fabritor-color-setter">
             <ColorsPicker
@@ -86,7 +95,7 @@ export default function ColorSetter (props) {
         >
           {renderTrigger()}
         </div>
-      </Popover> */}
+      </Popover>
 
       <svg style={{ width:0, height: 0, position: 'absolute' }} aria-hidden="true" focusable="false">
         <linearGradient id="colorsetter-icon-gradient" x2="1" y2="1">

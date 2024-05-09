@@ -5,6 +5,15 @@ const nextConfig = {
       sharp: "commonjs sharp",
       canvas: "commonjs canvas",
     });
+    config.module.rules.push({
+			test: /node_modules\/react-colors-beauty/,
+			resolve: {
+				alias: {
+					"./index.less": false,
+          "./rc-color-picker.less": false,
+				},
+			},
+		});
     return config;
   },
   typescript: {
