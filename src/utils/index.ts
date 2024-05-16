@@ -127,15 +127,10 @@ export const transformFill2Colors = (v) => {
 }
 
 export const transformColors2Fill = (v) => {
-  // {type: 'solid', color: '#c5dfdf7a'}
-  // v.type = 'solid'
-
-  // console.log(v, 'value')
-
   let fill: any;
   switch(v?.type) {
     case 'solid':
-      fill = v.hex;
+      fill = v.color;
       break;
     case 'linear':
       fill = {
@@ -155,7 +150,6 @@ export const transformColors2Fill = (v) => {
     default:
       break;
   }
-  // console.log(fill, 'fill')
   return fill;
 }
 
