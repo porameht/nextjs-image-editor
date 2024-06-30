@@ -81,7 +81,9 @@ body {
 }
 
 .fabritor-layout .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab {
-  padding: 8px 18px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .ant-tabs-content-holder {

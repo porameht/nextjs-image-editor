@@ -1,7 +1,7 @@
 import { Popover } from 'antd';
-// import { Color, ColorPicker } from 'react-colors-beauty';
+import { Color, ColorPicker } from 'react-colors-beauty';
 
-export default function SolidColorSetter (props) {
+export default function SolidColorSetter(props) {
   const { value, onChange, trigger } = props;
 
   const handleChange = (v) => {
@@ -26,25 +26,26 @@ export default function SolidColorSetter (props) {
   }
 
   return (
-    // <Popover
-    //   content={
-    //     <ColorPicker
-    //       value={value}
-    //       onChange={handleChange}
-    //       format="hex"
-    //     />
-    //   }
-    // >
-    //   <div 
-    //     className="fabritor-toolbar-item"
-    //     style={{
-    //       borderRadius: 4,
-    //       backgroundColor: calcTriggerBg()
-    //     }}
-    //   >
-    //     {renderTrigger()}
-    //   </div>
-    // </Popover>
-    <div></div>
+    <>
+      <Popover
+        content={
+          <ColorPicker
+            value={value}
+            onChange={handleChange}
+            format="hex"
+          />
+        }
+      >
+        <div
+          className="fabritor-toolbar-item"
+          style={{
+            borderRadius: 4,
+            backgroundColor: calcTriggerBg()
+          }}
+        >
+          {renderTrigger()}
+        </div>
+      </Popover>
+    </>
   )
 }

@@ -1,13 +1,20 @@
+// import Fabritor from '@/fabritor';
 'use client';
+import dynamic from 'next/dynamic'
 
-// import dynamic from 'next/dynamic'
+const DynmicFabritor = dynamic(() => import('../../fabritor/index').then(a => a), {
+  ssr: false,
+})
 
-function EditorPage() {
+function FabritorPage() {
   return (
-    <div>Hello</div>
+    <div>
+      <DynmicFabritor />
+    </div>
   );
 }
 
-EditorPage.diplsayName = "EditorPage";
 
-export default EditorPage;
+FabritorPage.diplsayName = "FabritorPage";
+
+export default FabritorPage;

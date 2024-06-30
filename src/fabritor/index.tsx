@@ -50,7 +50,7 @@ export default function Fabritor() {
       return;
     }
 
-    if (opt.button === 3) { // 右键
+    if (opt.button === 3) {
       if (target.id !== SKETCH_ID) {
         editor.canvas.setActiveObject(target);
       }
