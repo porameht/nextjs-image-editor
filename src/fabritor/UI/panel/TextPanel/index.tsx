@@ -1,5 +1,5 @@
 import { Button } from 'antd';
-import PresetFontPanel from './PresetFontPanel';
+import PresetFontPanel, { DEFAULT_FONT } from './PresetFontPanel';
 import { createTextbox } from '@/editor/objects/textbox';
 import { useContext } from 'react';
 import { GlobalStateContext } from '@/context';
@@ -13,7 +13,7 @@ export default function TextPanel () {
 
   return (
     <div className="fabritor-panel-wrapper">
-      <Button type="dashed" block onClick={() => { handleAddText({}) }} size="large">
+      <Button type="dashed" block onClick={() => { handleAddText(DEFAULT_FONT.config) }} size="large">
         Add Text Box
       </Button>
       <PresetFontPanel addTextBox={handleAddText} />
