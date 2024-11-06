@@ -47,6 +47,18 @@ export const PRESET_FONT_LIST = [
   }
 ];
 
+export const DEFAULT_FONT = {
+  label: (
+    <div style={{ fontSize: 16, fontFamily: 'Arial' }}>Default Text Style</div>
+  ),
+  key: 'default-text',
+  config: {
+    fontFamily: 'Arial',
+    fontSize: 80,
+    text: 'Default Text Style',
+  },
+}
+
 export default function PresetFontPanel (props) {
   const { addTextBox } = props;
 
@@ -56,18 +68,18 @@ export default function PresetFontPanel (props) {
 
   return (
     <Flex vertical gap={8} style={{ marginTop: 16 }}>
-      <Title>Default text style</Title>
-      {
-        PRESET_FONT_LIST.map(item => (
-          <Card
-            key={item.key}
-            hoverable
-            onClick={() => { handleClick(item) }}
-          >
-            {item.label}
-          </Card>
-        ))
-      }
+      <Title>{DEFAULT_FONT.label}</Title>
+      {PRESET_FONT_LIST.map((item) => (
+        <Card
+          key={item.key}
+          hoverable
+          onClick={() => {
+            handleClick(item)
+          }}
+        >
+          {item.label}
+        </Card>
+      ))}
     </Flex>
-  );
+  )
 }
