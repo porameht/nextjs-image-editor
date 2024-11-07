@@ -32,7 +32,7 @@
     "fontfaceobserver": "^2.3.0",
     "hotkeys-js": "^3.13.7",
     "lucide-react": "^0.376.0",
-    "next": "^14.1.1",
+    "next": "^14.2.10",
     "postcss": "8.4.25",
     "react": "18.2.0",
     "react-color": "^2.19.3",
